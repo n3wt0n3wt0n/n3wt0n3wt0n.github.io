@@ -5,115 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Fireflies Background</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-.button-container {
-    display: flex;
-    flex-direction: column;   /* stack buttons vertically */
-    align-items: center;      /* center horizontally */
-    gap: 20px;                /* spacing between buttons */
-    margin: 40px 0;           /* optional vertical spacing */
-}
-
-.glass-button {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 24px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 14px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 266px;
-    height:70px;
-}
-
-/* 🔹 Dark rectangle spanning full width with margins */
-.glass-button::after {
-    content: "";
-    position: absolute;
-    top: 22px;          
-    bottom: 22px;       
-    left: 0;           
-    right: 0;          
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 0;
-    z-index: 0;        
-}
-
-/* 🔹 Sliding shine effect */
-.glass-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.2) 0%,
-        rgba(255, 255, 255, 0.05) 50%,
-        transparent 100%
-    );
-    transform: translateX(-100%);
-    transition: transform 0.6s ease;
-    z-index: 1; /* stays above dark rectangle but below content */
-}
-
-.glass-button:hover::before {
-    transform: translateX(100%);
-}
-
-.glass-button:hover {
-    background: rgba(255, 255, 255, 0.35);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px);
-}
-
-.glass-button img,
-.glass-button .button-text {
-    position: relative;
-    z-index: 2; /* above both shine and dark rectangle */
-    color: #fff;
-}
-
-.glass-button img {
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-}
-
-.button-text {
-    flex: 1;
-    text-align: center;
-    word-wrap: break-word;
-}
-</style>
-
-<div class="button-container">
- <a href="https://www.meta.com/experiences/8920158508044580" class="glass-button">
-      <img src="https://n3wt0n3wt0n.github.io/Images/IconHand.png" alt="Meta Store">
-       <span class="button-text">WISHLIST ON METASTORE</span>
-  </a>
-
-  <a href="https://discord.gg/xH5RKAHtwx" class="glass-button">
-      <img src="https://n3wt0n3wt0n.github.io/Images/Discord.png" alt="Discord">
-      <span class="button-text">JOIN OUR DISCORD</span>
-  </a>
-
- 
-</div>
-<style>
   /* make page content minimal (so iframe height is tiny in Google Sites) */
   html,body { height: 1px; margin: 0; padding: 0; }
   /* full-screen canvas fixed to viewport */
@@ -127,7 +18,7 @@
     display: block;
   }
   /* optional: background color while canvas initializes */
-  
+  body { background: #071018; }
 </style>
 </head>
 <body>
