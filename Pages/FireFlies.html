@@ -8,12 +8,16 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-.button-container {
-    display: flex;
-    flex-direction: column;   /* stack buttons vertically */
-    align-items: center;      /* center horizontally */
-    gap: 20px;                /* spacing between buttons */
-    margin: 40px 0;           /* optional vertical spacing */
+#button-container {
+  display: flex;
+  flex-direction: column;   /* stack buttons vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* optional: center vertically if container is tall */
+  gap: 16px;                /* spacing between buttons */
+  margin: 0;                /* no extra vertical margins */
+  width: 100%;
+  height: 100%;             /* take full height of embed frame */
+  overflow: hidden;         /* prevent scrollbars inside container */
 }
 
 .glass-button {
